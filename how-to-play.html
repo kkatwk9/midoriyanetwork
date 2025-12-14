@@ -27,8 +27,8 @@
   <meta name="twitter:description" content="Инструкция по входу, версии, IP, FAQ и помощь через Discord." />
   <meta name="twitter:image" content="https://midoriyanetwork.xyz/banner.png" />
 
-  <!-- Стили (тот же файл, что и у index) -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Стили (тут была ошибка — FIXED) -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -61,7 +61,6 @@
 </header>
 
 <main>
-  <!-- HERO-ИНСТРУКЦИЯ -->
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
@@ -76,7 +75,6 @@
             через лицензионный лаунчер или TLauncher.
           </p>
 
-          <!-- Блок шагов с подсветкой текущего -->
           <ol class="steps steps-highlight">
             <li data-step="1">
               <strong>1. Установи Minecraft / лаунчер.</strong><br>
@@ -118,74 +116,33 @@
           </div>
         </div>
 
-        <!-- Баннер с параллаксом -->
         <div class="hero-banner">
           <div class="hero-banner-main parallax" data-speed="3">
             <img src="banner-main.png" alt="Как начать играть на MIDORIYA" />
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- БЛОК «КАК ЗАЙТИ ЧЕРЕЗ TLAUNCHER / ЛИЦЕНЗИЮ» -->
-  <section>
-    <div class="container">
-      <div class="section-title">Лаунчеры</div>
-      <h2 class="section-heading">TLauncher или лицензия — что выбрать?</h2>
-      <p class="section-description">
-        Сервер принимает как лицензированных игроков, так и игроков с TLauncher.
-        Главное — правильно выбрать версию и прописать IP без ошибок.
-      </p>
-
-      <div class="modes-grid">
-        <div class="mode-card">
-          <div class="mode-label">Рекомендация</div>
-          <div class="mode-title">Официальный лаунчер</div>
-          <p class="mode-desc">
-            Максимальная стабильность и безопасность аккаунта. Просто добавь новый сервер,
-            впиши IP и играй.
-          </p>
-          <div class="mode-meta">Лучший вариант, если у тебя есть лицензия.</div>
-        </div>
-
-        <div class="mode-card">
-          <div class="mode-label">Альтернатива</div>
-          <div class="mode-title">TLauncher</div>
-          <p class="mode-desc">
-            Бесплатный лаунчер, который позволяет зайти без лицензии. Обязательно выбери
-            версию 1.21.11 Java Edition и следи, чтобы не было конфликтующих модов.
-          </p>
-          <div class="mode-meta">Подходит для быстрых заходов на сервер.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
   <section id="faq">
     <div class="container">
       <div class="section-title">FAQ</div>
       <h2 class="section-heading">Частые вопросы</h2>
-      <p class="section-description">
-        Если что‑то не получается — посмотри ответы ниже. Если проблему не решает FAQ,
-        просто напиши в наш Discord, и тебе помогут.
-      </p>
 
       <div class="faq-list">
         <div>
           <div class="faq-item-title">Нужен ли лицензионный Minecraft?</div>
           <p class="faq-item-text">
-            Нет, можно играть и с лицензией, и через TLauncher. Но официальный лаунчер стабильнее
-            и безопаснее для твоего аккаунта.
+            Нет, можно играть и с лицензией, и через TLauncher.
           </p>
         </div>
 
         <div>
           <div class="faq-item-title">Какая версия сервера?</div>
           <p class="faq-item-text">
-            MIDORIYA NETWORK работает на версии 1.21.11 Java Edition. Если клиент другой версии,
-            могут возникать ошибки при подключении или вылеты.
+            MIDORIYA NETWORK работает на 1.21.11 Java Edition.
           </p>
         </div>
 
@@ -193,31 +150,13 @@
           <div class="faq-item-title">Где взять IP сервера?</div>
           <p class="faq-item-text">
             Наш IP: <span class="ip-value">midoriyarp.softhost.fun</span>.
-            Ты можешь скопировать его через кнопку «Скопировать IP» сверху или кликнув по адресу в шаге 4.
           </p>
         </div>
 
         <div>
-          <div class="faq-item-title">Почему не заходит на сервер?</div>
+          <div class="faq-item-title">Почему не заходит?</div>
           <p class="faq-item-text">
-            Проверь версию игры (1.21.11), перезапусти лаунчер и убедись, что IP введён без пробелов и опечаток.
-            Если всё равно не получается — сделай скрин ошибки и отправь его в канал помощи в Discord.
-          </p>
-        </div>
-
-        <div>
-          <div class="faq-item-title">Можно играть с модами / шейдерами?</div>
-          <p class="faq-item-text">
-            Лёгкие шейдеры и ресурс‑паки допускаются, если не дают нечестного преимущества.
-            Крупные модпаки могут конфликтовать с сервером — рекомендуется чистый клиент.
-          </p>
-        </div>
-
-        <div>
-          <div class="faq-item-title">Когда открытие, вайпы и ивенты?</div>
-          <p class="faq-item-text">
-            Даты стартов сезонов, вайпов, крупных ивентов и RP‑сюжетов анонсируются в Discord
-            в канале с новостями. Там же можно следить за изменениями в правилах и режимах.
+            Проверь версию игры, рестартни лаунчер и IP.
           </p>
         </div>
       </div>
