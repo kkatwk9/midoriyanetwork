@@ -4,25 +4,31 @@
   <meta charset="UTF-8" />
   <title>Как начать играть — MIDORIYA NETWORK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/style.css" />
 
-  <!-- ▼▼▼ ДОБАВЛЕНО: FAVICON + SOCIAL META ▼▼▼ -->
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <!-- Описание для поиска -->
+  <meta name="description" content="Пошаговая инструкция, как зайти на сервер MIDORIYA NETWORK через TLauncher или лицензионный Minecraft. IP: midoriyarp.softhost.fun." />
 
-  <!-- SEO -->
-  <meta name="description" content="Пошаговая инструкция: как зайти на Minecraft сервер MIDORIYA NETWORK. IP — midoriyarp.softhost.fun. Полный гайд для новичков." />
+  <!-- Favicon (те же, что и на главной) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <meta name="theme-color" content="#00eaff" />
 
-  <!-- Open Graph (Discord, Telegram, WhatsApp) -->
-  <meta property="og:title" content="Как начать играть — MIDORIYA NETWORK" />
-  <meta property="og:description" content="Пошаговая инструкция по подключению к серверу MIDORIYA NETWORK. IP: midoriyarp.softhost.fun" />
-  <meta property="og:image" content="https://midoriyanetwork.xyz/img/banner.png" />
-  <meta property="og:type" content="website" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Как начать играть на MIDORIYA NETWORK" />
+  <meta property="og:description" content="Пошаговый гайд по подключению к неоновому серверу MIDORIYA NETWORK. IP: midoriyarp.softhost.fun" />
+  <meta property="og:image" content="https://midoriyanetwork.xyz/banner.png" />
   <meta property="og:url" content="https://midoriyanetwork.xyz/how-to-play.html" />
+  <meta property="og:type" content="website" />
 
-  <!-- Для Twitter (не обязательно, но красиво) -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://midoriyanetwork.xyz/img/banner.png" />
-  <!-- ▲▲▲ КОНЕЦ ДОБАВЛЕННЫХ ТЕГОВ ▲▲▲ -->
+  <meta name="twitter:title" content="Как начать играть на MIDORIYA NETWORK" />
+  <meta name="twitter:description" content="Инструкция по входу, версии, IP, FAQ и помощь через Discord." />
+  <meta name="twitter:image" content="https://midoriyanetwork.xyz/banner.png" />
+
+  <!-- Стили (тот же файл, что и у index) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -32,18 +38,22 @@
   <div class="container">
     <div class="navbar">
       <div class="nav-left">
-        <div class="nav-logo">
-          <img src="img/logo-eye.png" alt="MIDORIYA NETWORK" />
-        </div>
+        <a href="index.html" class="nav-logo-link">
+          <div class="nav-logo">
+            <img src="logo-eye.png" alt="MIDORIYA NETWORK" />
+          </div>
+        </a>
         <div class="nav-title">
           <span>MIDORIYA NETWORK</span>
           <span>Гайд по подключению</span>
         </div>
       </div>
+
       <nav class="nav-links">
         <a href="index.html">Главная</a>
         <a href="index.html#modes">Режимы</a>
         <a href="how-to-play.html" class="active">Как начать</a>
+        <a href="#faq">FAQ</a>
         <a href="https://discord.gg/pCAcCrrysk" target="_blank" rel="noopener" class="btn btn-primary">Discord</a>
       </nav>
     </div>
@@ -51,6 +61,7 @@
 </header>
 
 <main>
+  <!-- HERO-ИНСТРУКЦИЯ -->
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
@@ -61,48 +72,171 @@
             <span>ИГРАТЬ НА СЕРВЕРЕ</span>
           </h1>
           <p class="hero-subtitle">
-            Выполни эти шаги, и уже через пару минут ты окажешься в мире MIDORIYA NETWORK.
+            Следуй этим шагам, чтобы без ошибок зайти на MIDORIYA NETWORK
+            через лицензионный лаунчер или TLauncher.
           </p>
 
-          <ol class="steps">
-            <li><strong>1. Установи Minecraft.</strong> Подойдёт лицензионный лаунчер или TLauncher с поддержкой версий 1.20.x Java Edition.</li>
-            <li><strong>2. Выбери версию 1.20.x Java.</strong> Перед запуском установи последнюю версию 1.20.x (желательно без модов).</li>
-            <li><strong>3. Открой «Сетевая игра».</strong> Запусти игру, зайди в Multiplayer/«Сетевая игра» и нажми «Добавить сервер».</li>
-            <li><strong>4. Введи IP сервера.</strong> В поле адреса сервера впиши <span class="ip-value">midoriyarp.softhost.fun</span>, сохрани и подключись.</li>
-            <li><strong>5. Зарегистрируй аккаунт.</strong> При первом входе введи логин и пароль в чате, чтобы привязать аккаунт и защитить его.</li>
-            <li><strong>6. Выбери режим.</strong> В лобби зайди в портал Survival, Roleplay, BedWars или SkyBlock и следуй внутриигровым подсказкам.</li>
+          <!-- Блок шагов с подсветкой текущего -->
+          <ol class="steps steps-highlight">
+            <li data-step="1">
+              <strong>1. Установи Minecraft / лаунчер.</strong><br>
+              Подойдёт официальный лаунчер Minecraft Launcher или TLauncher c поддержкой версий 1.21.11 Java Edition.
+            </li>
+            <li data-step="2">
+              <strong>2. Выбери версию 1.21.11 Java.</strong><br>
+              В лаунчере перед запуском выбери или установи версию 1.21.11 (желательно чистую, без модов).
+            </li>
+            <li data-step="3">
+              <strong>3. Открой «Сетевая игра».</strong><br>
+              Запусти игру → нажми «Сетевая игра» (Multiplayer) → «Добавить сервер» (Add Server).
+            </li>
+            <li data-step="4">
+              <strong>4. Введи IP сервера.</strong><br>
+              В поле адреса сервера введи:
+              <button class="ip-inline" id="ipInlineBtn">
+                <span id="serverIp">midoriyarp.softhost.fun</span>
+              </button>
+              и сохрани.
+            </li>
+            <li data-step="5">
+              <strong>5. Подключись и зарегистрируйся.</strong><br>
+              Нажми «Подключиться» → на сервере следуй подсказкам для регистрации (ник + пароль), чтобы защитить аккаунт.
+            </li>
+            <li data-step="6">
+              <strong>6. Выбери режим.</strong><br>
+              В хабе зайди в портал Survival, RP, BedWars, SkyBlock, Anarchy или Duels — стартовому игроку обычно советуется Survival или RP.
+            </li>
           </ol>
 
-          <div style="margin-top:20px;">
+          <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn-primary" id="copyIpBtn">
+              <span class="copy-icon">📋</span>
+              <span class="copy-text">Скопировать IP</span>
+            </button>
             <a href="index.html" class="btn">На главную</a>
-            <a href="https://discord.gg/pCAcCrrysk" class="btn btn-primary" target="_blank" rel="noopener">Нужна помощь? Discord</a>
+            <a href="https://discord.gg/pCAcCrrysk" class="btn" target="_blank" rel="noopener">Нужна помощь? Discord</a>
           </div>
         </div>
 
+        <!-- Баннер с параллаксом -->
         <div class="hero-banner">
           <div class="hero-banner-main parallax" data-speed="3">
-            <img src="img/banner-main.png" alt="Как начать играть" />
+            <img src="banner-main.png" alt="Как начать играть на MIDORIYA" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- БЛОК «КАК ЗАЙТИ ЧЕРЕЗ TLAUNCHER / ЛИЦЕНЗИЮ» -->
   <section>
+    <div class="container">
+      <div class="section-title">Лаунчеры</div>
+      <h2 class="section-heading">TLauncher или лицензия — что выбрать?</h2>
+      <p class="section-description">
+        Сервер принимает как лицензированных игроков, так и игроков с TLauncher.
+        Главное — правильно выбрать версию и прописать IP без ошибок.
+      </p>
+
+      <div class="modes-grid">
+        <div class="mode-card">
+          <div class="mode-label">Рекомендация</div>
+          <div class="mode-title">Официальный лаунчер</div>
+          <p class="mode-desc">
+            Максимальная стабильность и безопасность аккаунта. Просто добавь новый сервер,
+            впиши IP и играй.
+          </p>
+          <div class="mode-meta">Лучший вариант, если у тебя есть лицензия.</div>
+        </div>
+
+        <div class="mode-card">
+          <div class="mode-label">Альтернатива</div>
+          <div class="mode-title">TLauncher</div>
+          <p class="mode-desc">
+            Бесплатный лаунчер, который позволяет зайти без лицензии. Обязательно выбери
+            версию 1.21.11 Java Edition и следи, чтобы не было конфликтующих модов.
+          </p>
+          <div class="mode-meta">Подходит для быстрых заходов на сервер.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
     <div class="container">
       <div class="section-title">FAQ</div>
       <h2 class="section-heading">Частые вопросы</h2>
       <p class="section-description">
-        Если что-то не получается, сначала посмотри ответы ниже, а затем приезжай в Discord — команда помощи всегда онлайн.
+        Если что‑то не получается — посмотри ответы ниже. Если проблему не решает FAQ,
+        просто напиши в наш Discord, и тебе помогут.
       </p>
 
       <div class="faq-list">
         <div>
           <div class="faq-item-title">Нужен ли лицензионный Minecraft?</div>
           <p class="faq-item-text">
-            Можно играть и с лицензией, и через TLauncher, но оригинальный лаунчер стабильнее и безопаснее для твоего аккаунта.
+            Нет, можно играть и с лицензией, и через TLauncher. Но официальный лаунчер стабильнее
+            и безопаснее для твоего аккаунта.
           </p>
         </div>
+
         <div>
           <div class="faq-item-title">Какая версия сервера?</div>
           <p class="faq-item-text">
+            MIDORIYA NETWORK работает на версии 1.21.11 Java Edition. Если клиент другой версии,
+            могут возникать ошибки при подключении или вылеты.
+          </p>
+        </div>
+
+        <div>
+          <div class="faq-item-title">Где взять IP сервера?</div>
+          <p class="faq-item-text">
+            Наш IP: <span class="ip-value">midoriyarp.softhost.fun</span>.
+            Ты можешь скопировать его через кнопку «Скопировать IP» сверху или кликнув по адресу в шаге 4.
+          </p>
+        </div>
+
+        <div>
+          <div class="faq-item-title">Почему не заходит на сервер?</div>
+          <p class="faq-item-text">
+            Проверь версию игры (1.21.11), перезапусти лаунчер и убедись, что IP введён без пробелов и опечаток.
+            Если всё равно не получается — сделай скрин ошибки и отправь его в канал помощи в Discord.
+          </p>
+        </div>
+
+        <div>
+          <div class="faq-item-title">Можно играть с модами / шейдерами?</div>
+          <p class="faq-item-text">
+            Лёгкие шейдеры и ресурс‑паки допускаются, если не дают нечестного преимущества.
+            Крупные модпаки могут конфликтовать с сервером — рекомендуется чистый клиент.
+          </p>
+        </div>
+
+        <div>
+          <div class="faq-item-title">Когда открытие, вайпы и ивенты?</div>
+          <p class="faq-item-text">
+            Даты стартов сезонов, вайпов, крупных ивентов и RP‑сюжетов анонсируются в Discord
+            в канале с новостями. Там же можно следить за изменениями в правилах и режимах.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© MIDORIYA NETWORK. Неофициальный Minecraft сервер.</div>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="index.html#modes">Режимы</a>
+      <a href="https://discord.gg/pCAcCrrysk" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
